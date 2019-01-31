@@ -12,10 +12,12 @@ import Foundation
 class Artist{
     
     var naam:String
+    var omschrijving:String
     var uur:String
     
-    init(naam:String, uur:String) {
+    init(naam:String, omschrijving:String, uur:String) {
         self.naam = naam
+        self.omschrijving = omschrijving
         self.uur = uur
     }
     

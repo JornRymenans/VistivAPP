@@ -82,7 +82,7 @@
                                 </constraints>
                                 <state key="normal" title="Line Up"/>
                                 <connections>
-                                    <segue destination="8Fb-FM-rQV" kind="show" id="HeH-bd-VWh"/>
+                                    <segue destination="JZP-yc-EQE" kind="show" id="HeH-bd-VWh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,22 +164,43 @@
             </objects>
             <point key="canvasLocation" x="1878" y="817"/>
         </scene>
-        <!--Line Up-->
+        <!--Vrijdag-->
         <scene sceneID="x5P-Ns-3ou">
             <objects>
-                <tableViewController title="Line Up" id="8Fb-FM-rQV" customClass="LineUpTableViewController" customModule="VistivAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Vrijdag" id="8Fb-FM-rQV" customClass="LineUpTableViewController" customModule="VistivAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1S0-aP-t6o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3BO-lK-fy7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="3BO-lK-fy7" customClass="LineUpTableViewCell" customModule="VistivAPP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3BO-lK-fy7" id="mOu-yX-8nd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFh-rU-X2d">
+                                            <rect key="frame" x="100" y="12" width="64" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Band" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q0-iW-nuK">
+                                            <rect key="frame" x="177" y="3" width="182" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="lblBand" destination="7Q0-iW-nuK" id="eju-81-svB"/>
+                                    <outlet property="lblUur" destination="GFh-rU-X2d" id="zgL-6P-2gp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -187,10 +208,60 @@
                             <outlet property="delegate" destination="8Fb-FM-rQV" id="wfO-yw-JVN"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Friday" id="gvz-gZ-iSM"/>
+                    <connections>
+                        <outlet property="tabelView" destination="1S0-aP-t6o" id="Rrd-vl-Sb5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtW-Es-aBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="-1867"/>
+            <point key="canvasLocation" x="2729" y="-1867"/>
+        </scene>
+        <!--Zaterdag-->
+        <scene sceneID="4hR-g5-YFz">
+            <objects>
+                <tableViewController title="Zaterdag" id="kKV-6w-pMS" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lJl-lm-q4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="W0h-Qo-WSx">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W0h-Qo-WSx" id="xEO-Gy-JfP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Band" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIN-Mx-0eI">
+                                            <rect key="frame" x="177" y="6" width="182" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDx-H0-kNW">
+                                            <rect key="frame" x="61" y="11" width="64" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kKV-6w-pMS" id="QJh-v3-z7Q"/>
+                            <outlet property="delegate" destination="kKV-6w-pMS" id="aTa-Hr-UGr"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Saturday" id="Uvg-VS-t7W"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssQ-QM-3Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ruP-RQ-6Vd"/>
+            </objects>
+            <point key="canvasLocation" x="3663.1999999999998" y="-1867.0164917541231"/>
         </scene>
         <!--Map-->
         <scene sceneID="uRO-0n-zjH">
@@ -224,6 +295,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HY4-OR-xIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-564.46776611694156"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nJ9-le-AMR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JZP-yc-EQE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="76D-P6-UoR">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Fb-FM-rQV" kind="relationship" relationship="viewControllers" id="Dg4-Yj-SLr"/>
+                        <segue destination="kKV-6w-pMS" kind="relationship" relationship="viewControllers" id="q6o-xp-2Yz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMJ-s8-snw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.8" y="-1867.0164917541231"/>
         </scene>
     </scenes>
 </document>
