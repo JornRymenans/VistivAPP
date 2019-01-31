@@ -12,6 +12,9 @@
 		71FEEE62220326AB00E5D98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE60220326AB00E5D98C /* Main.storyboard */; };
 		71FEEE64220326AE00E5D98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE63220326AE00E5D98C /* Assets.xcassets */; };
 		71FEEE67220326AE00E5D98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE65220326AE00E5D98C /* LaunchScreen.storyboard */; };
+		71FEEE7122032A0000E5D98C /* LineUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */; };
+		71FEEE7322032A4800E5D98C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7222032A4800E5D98C /* MapViewController.swift */; };
+		71FEEE7522032ADA00E5D98C /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7422032ADA00E5D98C /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		71FEEE63220326AE00E5D98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FEEE66220326AE00E5D98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71FEEE68220326AE00E5D98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpTableViewController.swift; sourceTree = "<group>"; };
+		71FEEE7222032A4800E5D98C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		71FEEE7422032ADA00E5D98C /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		71FEEE5B220326AB00E5D98C /* VistivAPP */ = {
 			isa = PBXGroup;
 			children = (
+				71FEEE6F220329D600E5D98C /* Controller */,
+				71FEEE6E220329CF00E5D98C /* Model */,
 				71FEEE5C220326AB00E5D98C /* AppDelegate.swift */,
-				71FEEE5E220326AB00E5D98C /* ViewController.swift */,
 				71FEEE60220326AB00E5D98C /* Main.storyboard */,
 				71FEEE63220326AE00E5D98C /* Assets.xcassets */,
 				71FEEE65220326AE00E5D98C /* LaunchScreen.storyboard */,
 				71FEEE68220326AE00E5D98C /* Info.plist */,
 			);
 			path = VistivAPP;
+			sourceTree = "<group>";
+		};
+		71FEEE6E220329CF00E5D98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71FEEE7422032ADA00E5D98C /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71FEEE6F220329D600E5D98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71FEEE5E220326AB00E5D98C /* ViewController.swift */,
+				71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */,
+				71FEEE7222032A4800E5D98C /* MapViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FEEE5F220326AB00E5D98C /* ViewController.swift in Sources */,
+				71FEEE7122032A0000E5D98C /* LineUpTableViewController.swift in Sources */,
 				71FEEE5D220326AB00E5D98C /* AppDelegate.swift in Sources */,
+				71FEEE7522032ADA00E5D98C /* Artist.swift in Sources */,
+				71FEEE7322032A4800E5D98C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.jorn.VistivAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.jorn.VistivAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
