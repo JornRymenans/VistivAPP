@@ -15,13 +15,13 @@ class LineUpSatDao{
     init() {
         
         //opvullen bands zaterdag
-        let TheBeachBoys = Artist.init(naam: "The Beach Boys", omschrijving: "Band info", uur: "20h")
-        let Seapony = Artist.init(naam: "Seapony", omschrijving: "Band info", uur: "20h")
-        let DirtyBeaches = Artist.init(naam: "Dirty Beaches", omschrijving: "Band info", uur: "20h")
-        let WashedOut = Artist.init(naam: "Washed Out", omschrijving: "Band info", uur: "20h")
-        let Swashbuckle = Artist.init(naam: "Swashbuckle", omschrijving: "Band info", uur: "20h")
-        let AdmiralFreebie = Artist.init(naam: "AdmiralFreebie", omschrijving: "Band info", uur: "22h")
-        let CountryJoe = Artist.init(naam: "Country Joe and the Fish", omschrijving: "Band info", uur: "22h")
+        let TheBeachBoys = Artist.init(naam: "The Beach Boys", omschrijving: "Band info", uur: "18:00-19:00")
+        let Seapony = Artist.init(naam: "Seapony", omschrijving: "Band info", uur: "19:30-20:30")
+        let DirtyBeaches = Artist.init(naam: "Dirty Beaches", omschrijving: "Band info", uur: "21:00-23:00")
+        let WashedOut = Artist.init(naam: "Washed Out", omschrijving: "Band info", uur: "23:30-02:00")
+        let Swashbuckle = Artist.init(naam: "Swashbuckle", omschrijving: "Band info", uur: "18:00-20:00")
+        let AdmiralFreebie = Artist.init(naam: "AdmiralFreebie", omschrijving: "Band info", uur: "21:00-22:30")
+        let CountryJoe = Artist.init(naam: "Country Joe and the Fish", omschrijving: "Band info", uur: "23:00-01:00")
         
         //Podiums opvullen zaterdag
         let RedFishStage = Podium.init(naam: "Red Fish Stage")

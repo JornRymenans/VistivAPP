@@ -21,6 +21,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         let BigfishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151502, 2.720532), title: "Big Fish Stage", img: UIImage(named: "NewPin.jpg")!)
         let RedFishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.152072, 2.721583), title: "Red-Fish Stage", img: UIImage(named: "NewPin.jpg")!)
         let BeachStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151119, 2.718182), title: "Beach Stage", img: UIImage(named: "NewPin.jpg")!)
