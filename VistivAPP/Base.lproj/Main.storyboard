@@ -315,7 +315,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-6T-fgh">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-6T-fgh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -327,7 +327,7 @@
                         <viewLayoutGuide key="safeArea" id="N2r-a9-BKA"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="7ey-6T-fgh" id="FSi-IJ-hcA"/>
+                        <outlet property="KaartView" destination="7ey-6T-fgh" id="Xbk-bm-myD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VpZ-kD-nFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -373,6 +373,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ine-B0-9P6"/>
+        <segue reference="Ep5-32-OyD"/>
     </inferredMetricsTieBreakers>
 </document>

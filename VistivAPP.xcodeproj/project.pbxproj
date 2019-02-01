@@ -15,6 +15,7 @@
 		71AF06CC2204463800CEC8C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CB2204463800CEC8C9 /* MapKit.framework */; };
 		71AF06CE2204463F00CEC8C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */; };
 		71AF06D02204481E00CEC8C9 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF06CF2204481E00CEC8C9 /* Pins.swift */; };
+		71AF06D322044A1400CEC8C9 /* NewPin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71AF06D222044A1400CEC8C9 /* NewPin.jpg */; };
 		71FEEE5D220326AB00E5D98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE5C220326AB00E5D98C /* AppDelegate.swift */; };
 		71FEEE5F220326AB00E5D98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE5E220326AB00E5D98C /* ViewController.swift */; };
 		71FEEE62220326AB00E5D98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE60220326AB00E5D98C /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		71AF06CB2204463800CEC8C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		71AF06CF2204481E00CEC8C9 /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
+		71AF06D222044A1400CEC8C9 /* NewPin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewPin.jpg; sourceTree = "<group>"; };
 		71FEEE59220326AB00E5D98C /* VistivAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistivAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FEEE5C220326AB00E5D98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71FEEE5E220326AB00E5D98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		71AF06D1220449EF00CEC8C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				71AF06D222044A1400CEC8C9 /* NewPin.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		71FEEE50220326AB00E5D98C = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		71FEEE5B220326AB00E5D98C /* VistivAPP */ = {
 			isa = PBXGroup;
 			children = (
+				71AF06D1220449EF00CEC8C9 /* Images */,
 				71FEEE6F220329D600E5D98C /* Controller */,
 				71FEEE6E220329CF00E5D98C /* Model */,
 				71FEEE5C220326AB00E5D98C /* AppDelegate.swift */,
@@ -189,6 +200,7 @@
 			files = (
 				71FEEE67220326AE00E5D98C /* LaunchScreen.storyboard in Resources */,
 				71FEEE64220326AE00E5D98C /* Assets.xcassets in Resources */,
+				71AF06D322044A1400CEC8C9 /* NewPin.jpg in Resources */,
 				71FEEE62220326AB00E5D98C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
