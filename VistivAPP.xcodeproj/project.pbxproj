@@ -11,13 +11,16 @@
 		719986332204374F00F6BFB1 /* LineUpSatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719986322204374F00F6BFB1 /* LineUpSatTableViewController.swift */; };
 		719986352204388300F6BFB1 /* LineUpSatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719986342204388300F6BFB1 /* LineUpSatTableViewCell.swift */; };
 		7199863722043AD000F6BFB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199863622043AD000F6BFB1 /* DetailViewController.swift */; };
+		71AF06C92204459B00CEC8C9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF06C82204459B00CEC8C9 /* MapViewController.swift */; };
+		71AF06CC2204463800CEC8C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CB2204463800CEC8C9 /* MapKit.framework */; };
+		71AF06CE2204463F00CEC8C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */; };
+		71AF06D02204481E00CEC8C9 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF06CF2204481E00CEC8C9 /* Pins.swift */; };
 		71FEEE5D220326AB00E5D98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE5C220326AB00E5D98C /* AppDelegate.swift */; };
 		71FEEE5F220326AB00E5D98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE5E220326AB00E5D98C /* ViewController.swift */; };
 		71FEEE62220326AB00E5D98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE60220326AB00E5D98C /* Main.storyboard */; };
 		71FEEE64220326AE00E5D98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE63220326AE00E5D98C /* Assets.xcassets */; };
 		71FEEE67220326AE00E5D98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FEEE65220326AE00E5D98C /* LaunchScreen.storyboard */; };
 		71FEEE7122032A0000E5D98C /* LineUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */; };
-		71FEEE7322032A4800E5D98C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7222032A4800E5D98C /* MapViewController.swift */; };
 		71FEEE7522032ADA00E5D98C /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7422032ADA00E5D98C /* Artist.swift */; };
 		71FEEE7722032FA000E5D98C /* Podium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7622032FA000E5D98C /* Podium.swift */; };
 		71FEEE7B2203317500E5D98C /* LineUpDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEEE7A2203317500E5D98C /* LineUpDao.swift */; };
@@ -29,6 +32,10 @@
 		719986322204374F00F6BFB1 /* LineUpSatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpSatTableViewController.swift; sourceTree = "<group>"; };
 		719986342204388300F6BFB1 /* LineUpSatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpSatTableViewCell.swift; sourceTree = "<group>"; };
 		7199863622043AD000F6BFB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		71AF06C82204459B00CEC8C9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		71AF06CB2204463800CEC8C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		71AF06CF2204481E00CEC8C9 /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
 		71FEEE59220326AB00E5D98C /* VistivAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistivAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FEEE5C220326AB00E5D98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71FEEE5E220326AB00E5D98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +44,6 @@
 		71FEEE66220326AE00E5D98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71FEEE68220326AE00E5D98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpTableViewController.swift; sourceTree = "<group>"; };
-		71FEEE7222032A4800E5D98C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		71FEEE7422032ADA00E5D98C /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		71FEEE7622032FA000E5D98C /* Podium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podium.swift; sourceTree = "<group>"; };
 		71FEEE7A2203317500E5D98C /* LineUpDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpDao.swift; sourceTree = "<group>"; };
@@ -49,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AF06CE2204463F00CEC8C9 /* CoreLocation.framework in Frameworks */,
+				71AF06CC2204463800CEC8C9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71AF06CA2204463800CEC8C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */,
+				71AF06CB2204463800CEC8C9 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71FEEE50220326AB00E5D98C = {
 			isa = PBXGroup;
 			children = (
 				71FEEE5B220326AB00E5D98C /* VistivAPP */,
 				71FEEE5A220326AB00E5D98C /* Products */,
+				71AF06CA2204463800CEC8C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +110,7 @@
 				71FEEE7622032FA000E5D98C /* Podium.swift */,
 				71FEEE7A2203317500E5D98C /* LineUpDao.swift */,
 				719986302204363B00F6BFB1 /* LineUpSatDao.swift */,
+				71AF06CF2204481E00CEC8C9 /* Pins.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,11 +120,11 @@
 			children = (
 				71FEEE5E220326AB00E5D98C /* ViewController.swift */,
 				71FEEE7022032A0000E5D98C /* LineUpTableViewController.swift */,
-				71FEEE7222032A4800E5D98C /* MapViewController.swift */,
 				71FEEE7C220339EE00E5D98C /* LineUpTableViewCell.swift */,
 				719986322204374F00F6BFB1 /* LineUpSatTableViewController.swift */,
 				719986342204388300F6BFB1 /* LineUpSatTableViewCell.swift */,
 				7199863622043AD000F6BFB1 /* DetailViewController.swift */,
+				71AF06C82204459B00CEC8C9 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,10 +207,11 @@
 				71FEEE5D220326AB00E5D98C /* AppDelegate.swift in Sources */,
 				71FEEE7D220339EE00E5D98C /* LineUpTableViewCell.swift in Sources */,
 				71FEEE7B2203317500E5D98C /* LineUpDao.swift in Sources */,
+				71AF06C92204459B00CEC8C9 /* MapViewController.swift in Sources */,
 				71FEEE7522032ADA00E5D98C /* Artist.swift in Sources */,
 				719986312204363B00F6BFB1 /* LineUpSatDao.swift in Sources */,
-				71FEEE7322032A4800E5D98C /* MapViewController.swift in Sources */,
 				71FEEE7722032FA000E5D98C /* Podium.swift in Sources */,
+				71AF06D02204481E00CEC8C9 /* Pins.swift in Sources */,
 				719986332204374F00F6BFB1 /* LineUpSatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
