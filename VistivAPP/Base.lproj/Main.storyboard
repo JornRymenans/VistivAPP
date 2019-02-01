@@ -164,6 +164,42 @@
             </objects>
             <point key="canvasLocation" x="1878" y="817"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="8B0-4p-vOY">
+            <objects>
+                <viewController id="Wsx-9A-iAh" customClass="DetailViewController" customModule="VistivAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UN3-Mk-ZZc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC4-Su-77V">
+                                <rect key="frame" x="16" y="64" width="343" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zE9-PK-dQ3">
+                                <rect key="frame" x="16" y="159" width="343" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uTl-fU-ZHc"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblBandName" destination="pC4-Su-77V" id="up2-4A-TkZ"/>
+                        <outlet property="tvOmschrijving" destination="zE9-PK-dQ3" id="DBx-k1-C6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiM-dx-XaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3188" y="-2538.9805097451276"/>
+        </scene>
         <!--Vrijdag-->
         <scene sceneID="x5P-Ns-3ou">
             <objects>
@@ -200,6 +236,7 @@
                                 <connections>
                                     <outlet property="lblBand" destination="7Q0-iW-nuK" id="eju-81-svB"/>
                                     <outlet property="lblUur" destination="GFh-rU-X2d" id="zgL-6P-2gp"/>
+                                    <segue destination="Wsx-9A-iAh" kind="show" id="Ep5-32-OyD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -220,13 +257,13 @@
         <!--Zaterdag-->
         <scene sceneID="4hR-g5-YFz">
             <objects>
-                <tableViewController title="Zaterdag" id="kKV-6w-pMS" sceneMemberID="viewController">
+                <tableViewController title="Zaterdag" id="kKV-6w-pMS" customClass="LineUpSatTableViewController" customModule="VistivAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lJl-lm-q4r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="W0h-Qo-WSx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="W0h-Qo-WSx" customClass="LineUpSatTableViewCell" customModule="VistivAPP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W0h-Qo-WSx" id="xEO-Gy-JfP">
@@ -249,6 +286,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblBand" destination="HIN-Mx-0eI" id="Nfh-Nl-b4p"/>
+                                    <outlet property="lblUur" destination="uDx-H0-kNW" id="v2a-R7-fHB"/>
+                                    <segue destination="Wsx-9A-iAh" kind="show" id="Ine-B0-9P6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -257,9 +299,11 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Saturday" id="Uvg-VS-t7W"/>
+                    <connections>
+                        <outlet property="tableViewSat" destination="lJl-lm-q4r" id="xpe-JU-hyQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssQ-QM-3Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="ruP-RQ-6Vd"/>
             </objects>
             <point key="canvasLocation" x="3663.1999999999998" y="-1867.0164917541231"/>
         </scene>
@@ -302,6 +346,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JZP-yc-EQE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="76D-P6-UoR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -315,4 +360,7 @@
             <point key="canvasLocation" x="1856.8" y="-1867.0164917541231"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ine-B0-9P6"/>
+    </inferredMetricsTieBreakers>
 </document>
