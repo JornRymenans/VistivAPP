@@ -56,6 +56,7 @@
 		719E418822084FE40055EBB8 /* Song15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 719E418322084FE20055EBB8 /* Song15.mp3 */; };
 		719E418922084FE40055EBB8 /* Song11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 719E418422084FE30055EBB8 /* Song11.mp3 */; };
 		719E418A22084FE40055EBB8 /* Song12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 719E418522084FE40055EBB8 /* Song12.mp3 */; };
+		719E418C220853220055EBB8 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E418B220853220055EBB8 /* TicketViewController.swift */; };
 		71AF06C92204459B00CEC8C9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF06C82204459B00CEC8C9 /* MapViewController.swift */; };
 		71AF06CC2204463800CEC8C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CB2204463800CEC8C9 /* MapKit.framework */; };
 		71AF06CE2204463F00CEC8C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */; };
@@ -127,6 +128,7 @@
 		719E418322084FE20055EBB8 /* Song15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song15.mp3; sourceTree = "<group>"; };
 		719E418422084FE30055EBB8 /* Song11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song11.mp3; sourceTree = "<group>"; };
 		719E418522084FE40055EBB8 /* Song12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song12.mp3; sourceTree = "<group>"; };
+		719E418B220853220055EBB8 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		71AF06C82204459B00CEC8C9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		71AF06CB2204463800CEC8C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71AF06CD2204463F00CEC8C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -291,6 +293,7 @@
 				7199863622043AD000F6BFB1 /* DetailViewController.swift */,
 				71AF06C82204459B00CEC8C9 /* MapViewController.swift */,
 				71CE1375220489A5001A3903 /* PhotoViewController.swift */,
+				719E418B220853220055EBB8 /* TicketViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				71AF06D522045BE800CEC8C9 /* MyAnnotations.swift in Sources */,
 				71FEEE7522032ADA00E5D98C /* Artist.swift in Sources */,
 				719986312204363B00F6BFB1 /* LineUpSatDao.swift in Sources */,
+				719E418C220853220055EBB8 /* TicketViewController.swift in Sources */,
 				71CE1376220489A5001A3903 /* PhotoViewController.swift in Sources */,
 				71FEEE7722032FA000E5D98C /* Podium.swift in Sources */,
 				719986332204374F00F6BFB1 /* LineUpSatTableViewController.swift in Sources */,
