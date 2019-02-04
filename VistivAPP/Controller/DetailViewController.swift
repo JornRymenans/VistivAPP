@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var lblBandName: UILabel!
     @IBOutlet weak var tvOmschrijving: UITextView!
+    @IBOutlet weak var imgBandInfo: UIImageView!
+    
     
     var bandDetail:Artist?
+    var audioPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
@@ -21,9 +25,25 @@ class DetailViewController: UIViewController {
 
         lblBandName.text = bandDetail?.naam
         tvOmschrijving.text = bandDetail?.omschrijving
+        imgBandInfo.image = UIImage(named: (bandDetail?.img)!)
+        
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: bandDetail?.music, ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+    }
+        catch{
+            print(error)
+        }
     }
     
-
     
-
+    @IBAction func Play(_ sender: Any) {
+        if audioPlayer.isPlaying {
+            audioPlayer.pause()
+        }else{
+        audioPlayer.play()
+    }
+    }
+    
+    
 }
