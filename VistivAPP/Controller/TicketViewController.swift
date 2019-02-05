@@ -21,14 +21,13 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var lblComTot: UILabel!
     @IBOutlet weak var lbltotaal: UILabel!
     var totaal:Double = 0
+    @IBOutlet weak var tfemail: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        stepperFri.wraps = true
-        stepperFri.autorepeat = true
-        stepperFri.maximumValue = 10
+        
         // Do any additional setup after loading the view.
     }
     
@@ -55,6 +54,36 @@ class TicketViewController: UIViewController {
         totaal += (sender.value * 12.00)
         lbltotaal.text = "\(totaal) euro"
     }
+    
+   
+    @IBAction func keyboard(_ sender: UITapGestureRecognizer) {
+        tfemail.resignFirstResponder()
+    }
+    
+  
+    
+    @IBAction func bestel() {
+        if tfemail.text == "" {
+            let alert = UIAlertController.init(title: "Opgepast!", message: "U bent u e-mail adres vergeten in te vullen", preferredStyle: .alert)
+            let okAction = UIAlertAction.init(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }else{
+        let alert = UIAlertController.init(title: "Veel plezier!", message: "Uw tickets zijn verzonden naar \(tfemail.text!)", preferredStyle:  .alert)
+        let okAction = UIAlertAction.init(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        lblFriday.text = "0"
+        lblSaturday.text = "0"
+        lblCombi.text = "0"
+        lblFriTot.text = "0 euro"
+        lblSatTot.text = "0 euro"
+        lblComTot.text = "0 euro"
+        lbltotaal.text = "0 euro"
+        tfemail.text = ""
+        }
+    }
+    
     
     
     

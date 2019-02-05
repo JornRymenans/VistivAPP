@@ -22,5 +22,6 @@ class MyAnnotation:NSObject, MKAnnotation  {
         //overgenoemn uit MKannotation
         self.title = title
         self.img = img
+        
     }
 }
