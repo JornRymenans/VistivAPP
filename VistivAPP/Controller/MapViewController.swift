@@ -21,12 +21,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let BigfishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151502, 2.720532), title: "Big Fish Stage", img: UIImage(named: "BigStage.jpeg")!)
-        let RedFishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.152072, 2.721583), title: "Red-Fish Stage", img: UIImage(named: "RedStage.jpeg")!)
-        let BeachStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151119, 2.718182), title: "Beach Stage", img: UIImage(named: "BeachStage.jpg")!)
-        let PirateStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.152280, 2.722559), title: "Pirate Stage", img: UIImage(named: "PirateStage.jpg")!)
-        let wc = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.150692, 2.719523), title: "WC", img: UIImage(named: "WC.jpg")!)
-        let Food = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151486, 2.723825), title: "Food & Drinks", img: UIImage(named: "Food.jpg")!)
+        let BigfishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151502, 2.720532), title: "Big Fish Stage", img: UIImage(named: "BigStage.jpeg")!, pincolor: UIColor.yellow)
+        let RedFishStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.152072, 2.721583), title: "Red-Fish Stage", img: UIImage(named: "RedStage.jpeg")!, pincolor: UIColor.yellow)
+        let BeachStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151119, 2.718182), title: "Beach Stage", img: UIImage(named: "BeachStage.jpg")!, pincolor: UIColor.yellow)
+        let PirateStage = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.152280, 2.722559), title: "Pirate Stage", img: UIImage(named: "PirateStage.jpg")!, pincolor: UIColor.yellow)
+        let wc = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.150692, 2.719523), title: "WC", img: UIImage(named: "WC.jpg")!, pincolor: UIColor.blue)
+        let Food = MyAnnotation.init(coordinate: CLLocationCoordinate2DMake(51.151486, 2.723825), title: "Food & Drinks", img: UIImage(named: "Food.jpg")!, pincolor: UIColor.red)
         
         
         
@@ -89,7 +89,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             }else{
                 //pin bestond nog niet, opbouwen in code
                 let customView = MKPinAnnotationView.init(annotation: myAnnotation, reuseIdentifier: "Pin")
-                customView.pinTintColor = UIColor.blue
+                customView.pinTintColor = myAnnotation.pincolor
                 customView.canShowCallout = true
                 let rectFrame = CGRect.init(x: 0, y: 0, width: 50, height: 50)
                 let prentjesView = UIImageView.init(frame: rectFrame)
